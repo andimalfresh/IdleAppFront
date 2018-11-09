@@ -12,3 +12,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.navlist {
+  list-style-type: None;
+}
+.navlist li {
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logoImg {
+  height: 300px;
+  width: 300px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
