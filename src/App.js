@@ -20,10 +20,14 @@ class App extends Component {
     });
   }
   render() {
+    const passLiq = this.state.productList.map((item, i) => {
+      return <Products key={i} info={item} />;
+    });
     return (
       <div className="App">
         <Navbar />
-        <Products liquors={this.productList} />
+        <img className="logoImg" src={require("./iwlogo.jpg")} />
+        {passLiq}
       </div>
     );
   }

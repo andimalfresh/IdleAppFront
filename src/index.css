@@ -19,15 +19,21 @@ code {
   display: inline-block;
   padding-left: 25px;
   padding-right: 25px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .logoImg {
   height: 300px;
   width: 300px;
+  padding-bottom: 50px;
 }
 .products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.prodName {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
 }
