@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    let responce = await fetch("http://localhost:3001/");
+    let responce = await fetch("https://iwspiritsdb.herokuapp.com");
     let json = await responce.json();
     console.log("jsonlog", json);
     this.setState({
@@ -26,11 +26,11 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <img className="logoImg" src={require("./iwlogo.jpg")} />
+        <img className="logoImg" alt="logo" src={require("./iwlogo.jpg")} />
         {passLiq}
       </div>
     );
   }
 }
-
+ 
 export default App;
